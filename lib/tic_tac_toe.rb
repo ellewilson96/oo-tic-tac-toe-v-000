@@ -86,7 +86,7 @@ WIN_COMBINATIONS.find do |win_combo|
 end
 end
 
-def full?(board)
+def full?
   board.none? do |i|
     i == " " || i.nil?
   end
