@@ -108,8 +108,8 @@ def over?
   end
 end
 
-def winner(@board)
-  if won?(@board) != nil
+def winner
+  if won? != nil
     winner = @board[won?(@board)[0]]
   end
 end
