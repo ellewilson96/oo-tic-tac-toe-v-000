@@ -110,7 +110,7 @@ end
 
 def winner
   if won? != nil
-    winner = @board[won?]
+    winner = board[won?]
   end
 end
 
