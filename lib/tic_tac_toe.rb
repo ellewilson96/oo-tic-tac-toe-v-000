@@ -32,7 +32,7 @@ def move(position, token = "X")
 end
 
 def valid_move?(position)
-  if @board.position.between?(0,8) && !position_taken?(position)
+  if position.between?(0,8) && !position_taken?(position)
     puts "this is a valid move"
     return true
   else
