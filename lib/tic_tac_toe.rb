@@ -13,7 +13,7 @@ class TicTacToe
 
     def WIN_COMBINATIONS
     end
-    
+
 
     def move
     end
