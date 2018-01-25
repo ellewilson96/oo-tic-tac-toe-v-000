@@ -109,7 +109,7 @@ def over?
 end
 
 def winner
-  if won?(board) != nil
+  if won? != nil
     winner = board[won?(board)[0]]
   end
 end
