@@ -55,14 +55,14 @@ end
 def turn
   puts "Please enter 1-9:"
   user_input = gets.strip
-  position = @board.input_to_index(user_input)
-  if @board.valid_move?(position)
+  position = .input_to_index(user_input)
+  if .valid_move?(position)
     puts "valid move"
-    @board.move(position, token)
-    @board.display_board
+    .move(position, token)
+    .display_board
   else
     puts "try again"
-    @board.turn
+  .turn
 end
 end
 
