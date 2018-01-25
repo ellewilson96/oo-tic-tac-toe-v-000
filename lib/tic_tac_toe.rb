@@ -118,7 +118,7 @@ def play
   until over? == true
     turn
   end
-  if draw?(board) == true
+  if draw? == true
        puts "Cat's Game!"
   else won?(board)
      puts "Congratulations #{winner(board)}!"
