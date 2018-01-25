@@ -11,6 +11,24 @@ class TicTacToe
       @board.count{|token| token == "X" || token == "O"}
     end
 
+    def WIN_COMBINATIONS
+    end
+    
+
+    def move
+    end
+    def position_taken?
+    end
+    def valid_move?
+    end
+    def turn
+      def input_to_index
+        def valid_move?
+          def current_player
+      end
+    end
+  end
+end
     def display_board
       puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
       puts "-----------"
