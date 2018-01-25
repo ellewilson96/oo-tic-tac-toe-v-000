@@ -58,7 +58,7 @@ def turn
   position = input_to_index(user_input)
   if valid_move?(position)
     puts "valid move"
-    move(position, token = "X")
+    move(position, current_player)
     display_board
   else
     puts "try again"
