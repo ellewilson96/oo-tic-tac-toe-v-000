@@ -62,7 +62,7 @@ def turn
     display_board
   else
     puts "try again"
-  @board.turn
+  turn
 end
 end
 
