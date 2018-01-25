@@ -22,7 +22,7 @@ class TicTacToe
       puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
     end
 
-    def turn(@board)
+    def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
   position = input_to_index(user_input)
@@ -32,7 +32,7 @@ class TicTacToe
     display_board(board)
   else
     puts "try again"
-    turn(@board)
+    turn(board)
 
 end
 end
