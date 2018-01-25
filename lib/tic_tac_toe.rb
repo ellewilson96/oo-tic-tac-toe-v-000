@@ -96,12 +96,12 @@ def draw?
   won? == nil && full? == true
 end
 
-def over?(board)
-  if draw?(board) == true
+def over?
+  if draw? == true
     true
-  elsif won?(board) != nil && full?(board) == true
+  elsif won? != nil && full? == true
     true
-  elsif won?(board) != nil && full?(board) == false
+  elsif won? != nil && full? == false
     true
   else
     false
