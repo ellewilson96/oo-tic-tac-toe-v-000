@@ -87,13 +87,13 @@ end
 end
 
 def full?
-  board.none? do |i|
+  @board.none? do |i|
     i == " " || i.nil?
   end
 end
 
-def draw?(board)
-  won?(board) == nil && full?(board) == true
+def draw?
+  won? == nil && full? == true
 end
 
 def over?(board)
