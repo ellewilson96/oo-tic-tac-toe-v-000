@@ -27,8 +27,9 @@ def input_to_index(move)
    position
 end
 
-def move(board, position, token)
+def move(position, token = "X")
   board[position] = token
+  @board = token
 end
 
 def valid_move?(board,position)
