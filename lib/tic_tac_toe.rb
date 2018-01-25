@@ -62,13 +62,13 @@ def turn
     display_board
   else
     puts "try again"
-    turn(board)
+    turn
 end
 end
 
-def turn_count(board)
+def turn_count
   count = 0
-  board.each do |move|
+  @board.each do |move|
     if move == "X" || move == "O"
       count += 1
     end
@@ -76,8 +76,8 @@ def turn_count(board)
   count
 end
 
-def current_player(board)
-  turn_count(board).even? ? "X" : "O"
+def current_player
+  turn_count.even? ? "X" : "O"
 end
 
 def won?(board)
