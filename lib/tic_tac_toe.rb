@@ -121,7 +121,7 @@ def play
   if draw? == true
        puts "Cat's Game!"
   else won?
-     puts "Congratulations #{winner(@board)}!"
+     puts "Congratulations #{winner}!"
    end
 end
 end
