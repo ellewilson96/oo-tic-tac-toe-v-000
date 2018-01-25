@@ -31,8 +31,8 @@ def move(position, token = "X")
   @board[position] = token
 end
 
-def valid_move?(board,position)
-  if position.between?(0,8) && !position_taken?(board,position)
+def valid_move?(position)
+  if @board.position.between?(0,8) && !position_taken?(position)
     puts "this is a valid move"
     return true
   else
@@ -40,26 +40,26 @@ def valid_move?(board,position)
   end
 end
 
-def position_taken?(board,position)
-  if board[position] == " "
+def position_taken?(position)
+  if @board[position] == " "
     false
-    elsif board[position] == ""
+  elsif @board[position] == ""
     false
-    elsif  board[position] == nil
+  elsif  @board[position] == nil
     false
-    else   board[position] == "X" || "O"
+  else   @board[position] == "X" || "O"
     true
   end
 end
 
-def turn(board)
+def turn
   puts "Please enter 1-9:"
   user_input = gets.strip
   position = input_to_index(user_input)
-  if valid_move?(board,position)
+  if valid_move?(position)
     puts "valid move"
-    move(board, position, current_player(board))
-    display_board(board)
+    move(position, token)
+    display_board
   else
     puts "try again"
     turn(board)
